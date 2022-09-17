@@ -33,3 +33,26 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.sidebarMenu {
+  animation: fadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.item__menu .content__menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.item__menu:hover .content__menu {
+  opacity: 1;
+  visibility: visible;
+}

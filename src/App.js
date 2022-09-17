@@ -8,10 +8,12 @@ import ZarinLink from "./Pages/ZarinLink";
 import ZarinPlus from "./Pages/ZarinPlus";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Header from "./Components/Header/Header";
 const App = () => {
   return (
     <>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/payment-gateway" element={<PaymentGatway />} />
